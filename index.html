@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoDrive | Concesionaria Premium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section { background: #f8f9fa; padding: 60px 0; }
+        .car-card img { height: 200px; object-fit: cover; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">NEODRIVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inventario">Inventario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas <span class="badge bg-danger">Nuevo</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Porsche">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Velocidad y Elegancia</h2>
+                    <p>Encuentra el deportivo de tus sueños hoy mismo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="inventario">
+        <h2 class="text-center mb-4">Modelos Destacados</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card car-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1555353540-64580b51c258?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="SUV">
+                    <div class="card-body">
+                        <h5 class="card-title">SUV Explorer 2024</h5>
+                        <p class="card-text">Potencia todoterreno con el máximo confort para toda la familia.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carModal">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card car-card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sedan">
+                    <div class="card-body">
+                        <h5 class="card-title">Sedan Executive</h5>
+                        <p class="card-text">La combinación perfecta entre tecnología y rendimiento urbano.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#carModal">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="alert alert-info">
+                    <strong>¡Aviso!</strong> Próximamente recibiremos modelos eléctricos. Suscríbete para enterarte.
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Financiación 0%
+                        <span class="badge bg-success rounded-pill">✔</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Seguro incluído
+                        <span class="badge bg-success rounded-pill">✔</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="carModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Especificaciones Técnicas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Motor: V8 Turboalimentado</p>
+                    <p>Transmisión: Automática de 9 velocidades</p>
+                    <label>Nivel de Eficiencia</label>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success" style="width: 85%">85%</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2026 NeoDrive Motors - Calidad sobre ruedas</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
